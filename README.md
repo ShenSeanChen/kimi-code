@@ -2,12 +2,15 @@
 
 ```
               ⚡
-             /\__/\
-            ( o  o )    ⚡
-            (   ⚡   )  /
-             >  ^  <  /
-            /|     |\/
-           (_|     |_)
+            /\        /\
+           /  \      /  \
+          /⚫  \    /  ⚫\
+         /      \  /      \
+        |   o      o      |
+        |  (O)      (O)   |
+        |       v         |
+         \    ⌒  ⌒       /
+          \_____________/
 ```
 
 > *“To become a Pokémon Master of Code, you must first choose your starter.”*
