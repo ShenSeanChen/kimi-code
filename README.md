@@ -17,9 +17,21 @@
 
 Welcome, trainer! 🌟
 
-This repo is an **open-source showcase** of how to go from a fresh install of **[Kimi Code](https://www.kimi.com/code)** to a fully shipped, interactive financial research terminal — powered by Moonshot’s latest model, **k2.7**.
+This repo shows how to go from **zero to a real financial dashboard** using **[Kimi Code](https://www.kimi.com/code)** and its latest model, **k2.7**.
 
-No slide decks. No fake mockups. Just one detailed prompt, real market data, and a real Bloomberg-style dashboard running locally in your browser.
+No slide decks. No fake screenshots. Just one detailed prompt, real stock market data, and a working research terminal that opens in your browser.
+
+---
+
+## 🎯 TL;DR
+
+1. Install Kimi Code (terminal or VS Code / Cursor).
+2. Log in with `/login`.
+3. Install the **Kimi Data Source Plugin** with `/plugins`.
+4. Copy the prompt from [`prompt.md`](./prompt.md) and paste it into Kimi.
+5. Wait a few minutes. Open the generated `research_workbench.html`.
+
+That’s it. You just shipped a Bloomberg-style research terminal.
 
 ---
 
@@ -27,78 +39,81 @@ No slide decks. No fake mockups. Just one detailed prompt, real market data, and
 
 The journey is simple:
 
-1. **Catch Kimi Code** — install it in your terminal.
-2. **Train it in your IDE** — add the Kimi Code extension to VS Code or Cursor.
-3. **Log in once** with `/login`.
-4. **Issue one big prompt** and watch k2.7 evolve your idea into a real product.
-5. **Open the generated HTML dashboard** and explore real charts, tickers, and filings.
+1. **Catch Kimi Code** — install the agent.
+2. **Log in once** with `/login`.
+3. **Add a data plugin** so Kimi can read real market data.
+4. **Issue one big prompt** and let k2.7 build everything.
+5. **Open the generated dashboard** and explore charts, tickers, and news.
 
-One idea → one prompt → one shipped research terminal.
+One idea → one prompt → one shipped tool.
+
+---
+
+## 🤔 What is Kimi Code?
+
+Kimi Code is an AI coding agent. You tell it what you want in plain English, and it can:
+
+- Write and edit code
+- Search the web and read documents
+- Run terminal commands
+- Build full apps and dashboards
+
+It works in two places: your **terminal** and inside **VS Code / Cursor** as an extension.
 
 ---
 
 ## 🥚 Choose Your Starter
 
-Before you can challenge the Pokémon League, you need a partner. Pick yours:
+Pick the path that feels easiest for you:
 
-| Starter | Path | Best for | Difficulty |
-|---------|------|----------|------------|
-| 🔥 **Charmander** | Terminal | Trainers who live in the command line | Easy |
-| 💧 **Squirtle** | VS Code / Cursor | Trainers who like panels and buttons | Easy |
+| Starter | Path | Best for |
+|---------|------|----------|
+| 🔥 **Charmander** | Terminal | You’re comfortable typing commands |
+| 💧 **Squirtle** | VS Code / Cursor | You prefer buttons and side panels |
 
-You only need one starter. Both evolve into the same champion.
+You only need one. Both lead to the same result.
 
 ---
 
 ## 🔥 Charmander Route: Terminal
 
-### Step 1: Catch your Kimi
+### 1. Install Kimi Code
 
-Throw your install ball:
-
-**macOS / Linux:**
+**Mac / Linux:**
 
 ```bash
 curl -fsSL https://code.kimi.com/kimi-code/install.sh | bash
 ```
 
-**Windows (PowerShell):**
+**Windows:**
 
 ```powershell
 Invoke-RestMethod https://code.kimi.com/kimi-code/install.ps1 | Invoke-Expression
 ```
 
-### Step 2: Wake up your shell
+### 2. Start Kimi Code
 
-If `kimi` isn’t found, reload your shell:
+```bash
+kimi
+```
+
+If `kimi` is not found, restart your terminal or run:
 
 ```bash
 source ~/.zshrc   # or ~/.bashrc
 ```
 
-Or open a fresh terminal tab — like starting a new route.
+### 3. Log in
 
-### Step 3: Log in at the Pokémon Center
-
-```bash
-kimi
-```
-
-Then type:
+Inside Kimi Code, type:
 
 ```
 /login
 ```
 
-A browser window opens. That’s your trainer card verification. 🪪
+This opens your browser and signs you in automatically.
 
-### Step 4: Start battling
-
-```bash
-kimi
-```
-
-Then issue your first command:
+### 4. Try a quick command
 
 ```
 Build me a React app that looks like a Pokédex
@@ -108,53 +123,45 @@ Build me a React app that looks like a Pokédex
 
 ## 💧 Squirtle Route: VS Code / Cursor
 
-Prefer a partner swimming alongside you in the IDE?
-
-1. Open **Extensions** (`Cmd+Shift+X` / `Ctrl+Shift+X`).
-2. Search **“Kimi Code”** and install it. ✨
+1. Open **Extensions** (`Cmd+Shift+X` on Mac, `Ctrl+Shift+X` on Windows).
+2. Search **“Kimi Code”** and install it.
 3. Open the Kimi Code panel from the sidebar.
-4. Run `/login` in the extension terminal.
-5. Start coding — *“I choose you, Kimi!”*
+4. Type `/login` in the Kimi terminal.
+5. Start coding.
 
-> 💡 *Cursor is built on VS Code, so the same extension usually works. If it’s not in Cursor’s marketplace, the Charmander route is just as powerful.*
+> 💡 *Cursor is built on VS Code, so the Kimi Code extension usually works there too. If you don’t see it in Cursor’s store, use the terminal route instead.*
 
 ---
 
-## 🧰 Teaching Kimi New Moves: Plugins
+## 🧰 Add the Data Plugin
 
-Kimi Code can learn extra moves through plugins. For the research terminal demo, you’ll want the **Kimi Data Source Plugin** so Kimi can pull real market data, filings, and news.
+For the research terminal demo, Kimi needs access to financial data. That’s where the **Kimi Data Source Plugin** comes in.
 
-### Install the plugin
-
-Inside Kimi Code (terminal or IDE panel), type:
+Inside Kimi Code, run:
 
 ```
 /plugins
 ```
 
-Find and install **Kimi Data Source Plugin**.
+Find **Kimi Data Source Plugin** and install it.
 
-### Use it
-
-Once installed, activate it with:
+Then activate it with:
 
 ```
 /kimi-datasource
 ```
 
-Now Kimi can call financial data tools like `yahoo_finance`, `query_stock`, `kimi_search_v2`, and `kimi_fetch_v2` — the same ones the big prompt below will use.
-
-Think of it as teaching your partner Surf before crossing the ocean. 🌊
+Once that’s done, Kimi can pull real stock prices, company info, news, and filings — basically everything the big prompt needs.
 
 ---
 
-## 🚀 The Main Event: Build the Research Terminal
+## 🚀 Build the Research Terminal
 
-Once Kimi Code is set up and the data plugin is installed, you can recreate the showcase demo in minutes.
+Now for the fun part.
 
-### Step 1: Send out Kimi
+### 1. Open Kimi Code
 
-Open it in the terminal:
+Terminal:
 
 ```bash
 kimi
@@ -162,78 +169,76 @@ kimi
 
 Or open the Kimi Code panel in VS Code / Cursor.
 
-### Step 2: Use the ultimate move
+### 2. Paste the prompt
 
-Copy the full prompt from **[`prompt.md`](./prompt.md)**.
+Open [`prompt.md`](./prompt.md) and copy the entire text.
 
-It tells k2.7 to build a **financial-terminal-style Research Workbench** for U.S. clean energy and power infrastructure stocks, including:
+Paste it into Kimi Code.
 
-- Real OHLCV market data
-- SEC filings and recent news
-- Interactive candlestick charts
-- Peer comparison tables
-- A Bloomberg-style HTML dashboard
-- Excel workbooks for sources and peer comps
+### 3. Let k2.7 work
 
-### Step 3: Let it evolve
+The prompt asks k2.7 to:
 
-k2.7 will:
+- Pick 8–12 U.S. clean energy stocks
+- Download real price history and recent news
+- Build an interactive HTML dashboard with charts
+- Create Excel files for peer comparisons and sources
+- Open the dashboard in your browser to check everything loads
 
-1. Screen 8–12 relevant stocks.
-2. Pull market data, filings, and news.
-3. Build `research_workbench.html` and supporting Excel/JSON files.
-4. Open the HTML in a browser to verify the charts load correctly.
+This usually takes a few minutes, depending on your internet speed.
 
-### Step 4: Explore your gym badge
+### 4. Open the result
 
-Open this file in your browser:
+Once it’s done, open this file in your browser:
 
 ```
 us_clean_energy_power_research_workbench/research_workbench.html
 ```
 
-You should see a scrolling ticker tape, watchlists, tabbed workspaces, and interactive charts — all backed by real data.
+You’ll see a scrolling ticker tape, stock charts, comparison tables, and more — all built from real data.
 
 ---
 
-## 🧭 Kimi Pokédex
+## 🧭 Command Pokédex
 
-| Command | Effect |
-|---------|--------|
-| `kimi --version` | Check your partner’s level |
-| `kimi --thinking` | Use a powered-up attack (deeper reasoning) |
-| `/login` | Verify your trainer card |
-| `/setup` | Configure your API key manually |
-| `/sessions` | View your saved adventures |
-| `kimi --continue` | Resume your last quest |
-
----
-
-## 🏆 Elite Four Tips
-
-- Use `@filename` to point Kimi at a specific file, like commanding a Pokémon to attack.
-- Press `Ctrl-X` in the CLI to switch to shell mode — great for quick items.
-- Run `/compact` when your context bar gets high, like healing at a Pokémon Center.
-- The prompt in [`prompt.md`](./prompt.md) is long on purpose: k2.7 handles the complexity so you don’t have to.
+| Command | What it does |
+|---------|--------------|
+| `kimi --version` | Check which version you have |
+| `kimi --thinking` | Make Kimi reason harder (slower but smarter) |
+| `/login` | Sign in with your browser |
+| `/setup` | Add an API key manually |
+| `/plugins` | Install plugins |
+| `/sessions` | See your previous chats |
+| `kimi --continue` | Resume your last chat |
+| `/compact` | Free up memory when chats get long |
 
 ---
 
-## 📦 What gets generated
+## 🏆 Pro Tips
 
-After running the prompt, you’ll find a new folder:
+- **Use `@filename`** to point Kimi at a specific file, like calling a Pokémon to attack.
+- **Press `Ctrl-X`** in the terminal to run normal shell commands without leaving Kimi.
+- **Run `/compact`** if your chat starts getting slow.
+- **The prompt is long on purpose.** k2.7 reads all the details so you don’t have to micromanage it.
+
+---
+
+## 📦 What gets created
+
+After running the prompt, you’ll get a new folder:
 
 ```
 us_clean_energy_power_research_workbench/
-├── research_workbench.html          # Interactive financial terminal
-├── us_clean_energy_power_peer_comps.xlsx
-├── source_inventory.xlsx
-├── market_ohlcv.json                # Real historical OHLCV data
+├── research_workbench.html          # The interactive dashboard
+├── us_clean_energy_power_peer_comps.xlsx  # Stock comparison spreadsheet
+├── source_inventory.xlsx            # List of data sources used
+├── market_ohlcv.json                # Real stock price history
 └── README.md                        # Notes from k2.7 about the build
 ```
 
 ---
 
-## 📜 Professor’s References
+## 📜 Learn More
 
 - [Kimi Code official site](https://www.kimi.com/code)
 - [Kimi Code CLI on GitHub](https://github.com/MoonshotAI/kimi-cli)

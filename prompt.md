@@ -1,14 +1,20 @@
 # Clean Energy & Power Infrastructure Research Workbench Prompt
 
-Use this prompt with **Kimi Code** (model `k2.7`) to generate a full financial-terminal-style research dashboard for U.S. clean energy and power infrastructure stocks.
+This is the prompt used in the demo. Paste it into Kimi Code (with model `k2.7`) and it will build a complete financial research dashboard for U.S. clean energy and power infrastructure stocks.
+
+> **New to this?** Don’t worry about the length. The prompt is written for the AI, not for you. Just copy the whole thing, paste it into Kimi Code, and let it run.
 
 ## What it builds
 
-- `research_workbench.html` — Bloomberg-style interactive research terminal
-- `us_clean_energy_power_peer_comps.xlsx` — peer comparison workbook
-- `source_inventory.xlsx` — source inventory and audit trail
-- `market_ohlcv.json` — real OHLCV historical market data
-- `README.md` — inside the generated project folder
+- `research_workbench.html` — an interactive stock research dashboard in your browser
+- `us_clean_energy_power_peer_comps.xlsx` — a spreadsheet comparing selected companies
+- `source_inventory.xlsx` — a list of sources and data notes
+- `market_ohlcv.json` — real historical stock price data
+- `README.md` — notes from k2.7 about what it built
+
+## What is OHLCV?
+
+OHLCV stands for **Open, High, Low, Close, Volume** — the basic numbers that describe how a stock traded each day. The prompt asks k2.7 to fetch real OHLCV data before drawing any charts, so the candlestick charts are based on actual market data, not fake values.
 
 ## Theme scope
 
@@ -144,11 +150,20 @@ Before finishing, open the HTML in a browser and verify:
 End with a concise list of generated file paths.
 ```
 
+## Before you run it
+
+Make sure you have:
+
+1. Kimi Code installed (terminal or VS Code / Cursor).
+2. Logged in with `/login`.
+3. Installed the **Kimi Data Source Plugin** via `/plugins` and activated it with `/kimi-datasource`.
+
 ## How to run it
 
-1. Set up Kimi Code (see main README).
-2. Open a terminal in an empty folder.
-3. Run `kimi` and authenticate with `/login`.
-4. Paste the prompt above.
-5. Let k2.7 research, build, and verify the dashboard.
-6. Open `us_clean_energy_power_research_workbench/research_workbench.html` in your browser.
+1. Create or open an empty folder where you want the dashboard built.
+2. Open Kimi Code:
+   - Terminal: run `kimi`
+   - VS Code / Cursor: open the Kimi Code panel
+3. Paste the entire prompt below.
+4. Wait a few minutes while k2.7 researches, builds, and verifies the dashboard.
+5. Open `us_clean_energy_power_research_workbench/research_workbench.html` in your browser.
