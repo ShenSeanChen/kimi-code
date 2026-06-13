@@ -1,12 +1,29 @@
-# Kimi Code Setup
+# ⚡ Kimi Code Adventure Guide 🏴‍☠️
 
-A quick reference for setting up [Kimi Code](https://www.kimi.com/code) — Moonshot AI's coding agent — either in your terminal or inside VS Code / Cursor.
+> *“To become the King of Code, you must first choose your path.”*
+
+Welcome, trainer — or should I say, pirate captain! 🌊
+
+This repo is your map to setting up **[Kimi Code](https://www.kimi.com/code)**, Moonshot AI’s coding agent. You can wield it from the **terminal** like a lone swordsman, or pilot it from **VS Code / Cursor** like a Pokémon master commanding their partner.
+
+Choose your starter below. ⬇️
 
 ---
 
-## Option 1: Terminal (CLI)
+## 🥚 Choose Your Starter
 
-### 1. Install
+| Path | Best for | Difficulty |
+|------|----------|------------|
+| 🗡️ **Terminal** | Pirates who live in the command line | Easy |
+| 🧩 **VS Code / Cursor** | Trainers who like buttons and sidebars | Easy |
+
+---
+
+## 🗡️ Path 1: Terminal (The Zoro Route)
+
+No IDE. Just you, your shell, and three swords worth of AI power.
+
+### Step 1: Catch your Kimi
 
 **macOS / Linux:**
 
@@ -20,19 +37,17 @@ curl -fsSL https://code.kimi.com/kimi-code/install.sh | bash
 Invoke-RestMethod https://code.kimi.com/kimi-code/install.ps1 | Invoke-Expression
 ```
 
-### 2. Restart your shell
+### Step 2: Wake up your shell
 
-If `kimi` is not found, reload your shell config:
+If `kimi` isn’t found, reload your shell:
 
 ```bash
 source ~/.zshrc   # or ~/.bashrc
 ```
 
-Or just open a new terminal tab.
+Or open a new terminal tab like opening a new route on the Grand Line.
 
-### 3. Authenticate
-
-Run:
+### Step 3: Log in
 
 ```bash
 kimi
@@ -44,49 +59,65 @@ Then type:
 /login
 ```
 
-This opens a browser and logs you in automatically.
+A browser will pop open — that’s your Pokédex… I mean, auth flow. 📱
 
-### 4. Start coding
+### Step 4: Battle
 
 ```bash
 kimi
 ```
 
-Then ask it anything, e.g.:
+Then challenge it:
 
 ```
-Create a simple React counter component
+Create a React counter faster than Pikachu’s Quick Attack
 ```
 
 ---
 
-## Option 2: VS Code / Cursor Extension
+## 🧩 Path 2: VS Code / Cursor (The Ash Route)
+
+You want a partner by your side, visible and ready.
 
 1. Open **Extensions** (`Cmd+Shift+X` / `Ctrl+Shift+X`).
-2. Search **"Kimi Code"** and install it.
+2. Search **"Kimi Code"** and install it. ✨
 3. Open the Kimi Code panel from the sidebar.
-4. Run `/login` in the extension terminal to authenticate.
-5. Start asking Kimi Code to edit, explain, or generate code.
+4. Run `/login` in the extension terminal.
+5. Start coding — “I choose you, Kimi!”
 
-> Cursor is built on VS Code, so you can usually install the same extension from the marketplace. If it is not available in Cursor's store, use the terminal CLI instead.
+> 💡 *Cursor is built on VS Code, so the same extension usually works. If Cursor’s marketplace doesn’t have it, switch to the Terminal path above — it’s just as strong.*
 
 ---
 
-## Useful commands
+## 🧭 Command Pokédex
 
-| Command | What it does |
-|---------|--------------|
-| `kimi --version` | Check installed version |
-| `kimi --thinking` | Enable deeper reasoning |
+| Command | Effect |
+|---------|--------|
+| `kimi --version` | Check your companion’s level |
+| `kimi --thinking` | Use deeper reasoning (like entering Gear 2) |
 | `/login` | Log in via browser |
 | `/setup` | Configure API key manually |
-| `/sessions` | View past sessions |
-| `kimi --continue` | Resume last session |
+| `/sessions` | View your saved adventures |
+| `kimi --continue` | Resume your last quest |
 
 ---
 
-## References
+## 🏆 Final Boss Tips
+
+- Use `@filename` to point Kimi at a specific file, like calling a Pokémon to the field.
+- Press `Ctrl-X` in the CLI to drop into shell mode — handy for quick looting.
+- Run `/compact` when your context bar gets high, like healing your team at a Pokémon Center.
+
+---
+
+## 📜 Scrolls of Wisdom
 
 - [Kimi Code official site](https://www.kimi.com/code)
 - [Kimi Code CLI on GitHub](https://github.com/MoonshotAI/kimi-cli)
-- [Kimi Code introduction / docs](https://www.kimi.com/resources/kimi-code-introduction)
+- [Kimi Code introduction](https://www.kimi.com/resources/kimi-code-introduction)
+
+---
+
+*May your builds pass and your bugs be few. 🌟*
+
+*“I’m gonna be King of the Coders!”* 👑
