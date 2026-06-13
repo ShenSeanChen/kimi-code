@@ -1,45 +1,57 @@
-# ⚡ Kimi Code × k2.7: From Setup to Shipped Terminal 🏴‍☠️
+# ⚡ Kimi Code × k2.7: Catch, Train, Ship 🐭
 
-> *“To become the King of Code, you must first choose your path.”*
+```
+              ⚡
+             /\__/\
+            ( o  o )    ⚡
+            (   ⚡   )  /
+             >  ^  <  /
+            /|     |\/
+           (_|     |_)
+```
 
-Welcome, trainer — or should I say, pirate captain! 🌊
+> *“To become a Pokémon Master of Code, you must first choose your starter.”*
+
+Welcome, trainer! 🌟
 
 This repo is an **open-source showcase** of how to go from a fresh install of **[Kimi Code](https://www.kimi.com/code)** to a fully shipped, interactive financial research terminal — powered by Moonshot’s latest model, **k2.7**.
 
-No slide decks. No fake mockups. Just a real prompt, real market data, and a real Bloomberg-style dashboard that you can run locally in your browser.
+No slide decks. No fake mockups. Just one detailed prompt, real market data, and a real Bloomberg-style dashboard running locally in your browser.
 
 ---
 
 ## 🎥 What this repo demonstrates
 
-The journey looks like this:
+The journey is simple:
 
-1. **Install Kimi Code** in your terminal.
-2. **Install the Kimi Code extension** in VS Code or Cursor.
+1. **Catch Kimi Code** — install it in your terminal.
+2. **Train it in your IDE** — add the Kimi Code extension to VS Code or Cursor.
 3. **Log in once** with `/login`.
-4. **Paste one detailed prompt** and let k2.7 do the rest.
+4. **Issue one big prompt** and watch k2.7 evolve your idea into a real product.
 5. **Open the generated HTML dashboard** and explore real charts, tickers, and filings.
 
-That’s it. One idea → one prompt → one shipped research terminal.
+One idea → one prompt → one shipped research terminal.
 
 ---
 
 ## 🥚 Choose Your Starter
 
-Before you can sail the Grand Line, you need a companion. Pick your path:
+Before you can challenge the Pokémon League, you need a partner. Pick yours:
 
-| Path | Best for | Difficulty |
-|------|----------|------------|
-| 🗡️ **Terminal** | Pirates who live in the command line | Easy |
-| 🧩 **VS Code / Cursor** | Trainers who like buttons and sidebars | Easy |
+| Starter | Path | Best for | Difficulty |
+|---------|------|----------|------------|
+| 🔥 **Charmander** | Terminal | Trainers who live in the command line | Easy |
+| 💧 **Squirtle** | VS Code / Cursor | Trainers who like panels and buttons | Easy |
 
-You only need one. Both connect to the same agent.
+You only need one starter. Both evolve into the same champion.
 
 ---
 
-## 🗡️ Path 1: Terminal (The Zoro Route)
+## 🔥 Charmander Route: Terminal
 
-### 1. Catch your Kimi
+### Step 1: Catch your Kimi
+
+Throw your install ball:
 
 **macOS / Linux:**
 
@@ -53,7 +65,7 @@ curl -fsSL https://code.kimi.com/kimi-code/install.sh | bash
 Invoke-RestMethod https://code.kimi.com/kimi-code/install.ps1 | Invoke-Expression
 ```
 
-### 2. Wake up your shell
+### Step 2: Wake up your shell
 
 If `kimi` isn’t found, reload your shell:
 
@@ -61,9 +73,9 @@ If `kimi` isn’t found, reload your shell:
 source ~/.zshrc   # or ~/.bashrc
 ```
 
-Or open a new terminal tab like discovering a new island on the Grand Line.
+Or open a fresh terminal tab — like starting a new route.
 
-### 3. Log in
+### Step 3: Log in at the Pokémon Center
 
 ```bash
 kimi
@@ -75,15 +87,15 @@ Then type:
 /login
 ```
 
-A browser window will open. That’s your Pokédex… I mean, authentication flow. 📱
+A browser window opens. That’s your trainer card verification. 🪪
 
-### 4. You’re ready
+### Step 4: Start battling
 
 ```bash
 kimi
 ```
 
-Now challenge it with anything:
+Then issue your first command:
 
 ```
 Build me a React app that looks like a Pokédex
@@ -91,9 +103,9 @@ Build me a React app that looks like a Pokédex
 
 ---
 
-## 🧩 Path 2: VS Code / Cursor (The Ash Route)
+## 💧 Squirtle Route: VS Code / Cursor
 
-Prefer a partner by your side? Here’s the IDE path:
+Prefer a partner swimming alongside you in the IDE?
 
 1. Open **Extensions** (`Cmd+Shift+X` / `Ctrl+Shift+X`).
 2. Search **“Kimi Code”** and install it. ✨
@@ -101,7 +113,7 @@ Prefer a partner by your side? Here’s the IDE path:
 4. Run `/login` in the extension terminal.
 5. Start coding — *“I choose you, Kimi!”*
 
-> 💡 *Cursor is built on VS Code, so the same extension usually works. If Cursor’s marketplace doesn’t have it, the Terminal path above is just as strong.*
+> 💡 *Cursor is built on VS Code, so the same extension usually works. If it’s not in Cursor’s marketplace, the Charmander route is just as powerful.*
 
 ---
 
@@ -109,9 +121,9 @@ Prefer a partner by your side? Here’s the IDE path:
 
 Once Kimi Code is set up, you can recreate the showcase demo in minutes.
 
-### Step 1: Open Kimi Code
+### Step 1: Send out Kimi
 
-Use the terminal:
+Open it in the terminal:
 
 ```bash
 kimi
@@ -119,11 +131,11 @@ kimi
 
 Or open the Kimi Code panel in VS Code / Cursor.
 
-### Step 2: Paste the prompt
+### Step 2: Use the ultimate move
 
 Copy the full prompt from **[`prompt.md`](./prompt.md)**.
 
-It asks k2.7 to build a **financial-terminal-style Research Workbench** for U.S. clean energy and power infrastructure stocks, complete with:
+It tells k2.7 to build a **financial-terminal-style Research Workbench** for U.S. clean energy and power infrastructure stocks, including:
 
 - Real OHLCV market data
 - SEC filings and recent news
@@ -132,16 +144,16 @@ It asks k2.7 to build a **financial-terminal-style Research Workbench** for U.S.
 - A Bloomberg-style HTML dashboard
 - Excel workbooks for sources and peer comps
 
-### Step 3: Let it cook
+### Step 3: Let it evolve
 
 k2.7 will:
 
 1. Screen 8–12 relevant stocks.
 2. Pull market data, filings, and news.
-3. Build `research_workbench.html` and the supporting Excel/JSON files.
+3. Build `research_workbench.html` and supporting Excel/JSON files.
 4. Open the HTML in a browser to verify the charts load correctly.
 
-### Step 4: Explore your terminal
+### Step 4: Explore your gym badge
 
 Open this file in your browser:
 
@@ -153,25 +165,23 @@ You should see a scrolling ticker tape, watchlists, tabbed workspaces, and inter
 
 ---
 
-## 🧭 Command Pokédex
-
-Handy commands once you’re sailing:
+## 🧭 Kimi Pokédex
 
 | Command | Effect |
 |---------|--------|
-| `kimi --version` | Check your companion’s level |
-| `kimi --thinking` | Use deeper reasoning (like entering Gear 2) |
-| `/login` | Log in via browser |
-| `/setup` | Configure API key manually |
+| `kimi --version` | Check your partner’s level |
+| `kimi --thinking` | Use a powered-up attack (deeper reasoning) |
+| `/login` | Verify your trainer card |
+| `/setup` | Configure your API key manually |
 | `/sessions` | View your saved adventures |
 | `kimi --continue` | Resume your last quest |
 
 ---
 
-## 🏆 Final Boss Tips
+## 🏆 Elite Four Tips
 
-- Use `@filename` to point Kimi at a specific file, like calling a Pokémon to the field.
-- Press `Ctrl-X` in the CLI to drop into shell mode — great for quick commands.
+- Use `@filename` to point Kimi at a specific file, like commanding a Pokémon to attack.
+- Press `Ctrl-X` in the CLI to switch to shell mode — great for quick items.
 - Run `/compact` when your context bar gets high, like healing at a Pokémon Center.
 - The prompt in [`prompt.md`](./prompt.md) is long on purpose: k2.7 handles the complexity so you don’t have to.
 
@@ -192,7 +202,7 @@ us_clean_energy_power_research_workbench/
 
 ---
 
-## 📜 Scrolls of Wisdom
+## 📜 Professor’s References
 
 - [Kimi Code official site](https://www.kimi.com/code)
 - [Kimi Code CLI on GitHub](https://github.com/MoonshotAI/kimi-cli)
@@ -202,12 +212,12 @@ us_clean_energy_power_research_workbench/
 
 ## 🤝 Open Source
 
-This repo is meant to be an open terminal. Fork it, remix the prompt, swap the theme, or use it as a starting point for your own k2.7 demos.
+This repo is meant to be an open Pokédex. Fork it, remix the prompt, swap the theme, or use it as a starting point for your own k2.7 demos.
 
-If you build something cool, share it. The Grand Line is long, and there’s room for many crews. 🌟
+If you build something cool, share it. The Pokémon League has room for many champions. ⚡
 
 ---
 
 *May your builds pass and your bugs be few.*
 
-*“I’m gonna be King of the Coders!”* 👑
+*“I’m gonna be a Pokémon Master… of Code!”* 👑
