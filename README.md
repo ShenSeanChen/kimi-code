@@ -120,9 +120,37 @@ Prefer a partner swimming alongside you in the IDE?
 
 ---
 
+## 🧰 Teaching Kimi New Moves: Plugins
+
+Kimi Code can learn extra moves through plugins. For the research terminal demo, you’ll want the **Kimi Data Source Plugin** so Kimi can pull real market data, filings, and news.
+
+### Install the plugin
+
+Inside Kimi Code (terminal or IDE panel), type:
+
+```
+/plugins
+```
+
+Find and install **Kimi Data Source Plugin**.
+
+### Use it
+
+Once installed, activate it with:
+
+```
+/kimi-datasource
+```
+
+Now Kimi can call financial data tools like `yahoo_finance`, `query_stock`, `kimi_search_v2`, and `kimi_fetch_v2` — the same ones the big prompt below will use.
+
+Think of it as teaching your partner Surf before crossing the ocean. 🌊
+
+---
+
 ## 🚀 The Main Event: Build the Research Terminal
 
-Once Kimi Code is set up, you can recreate the showcase demo in minutes.
+Once Kimi Code is set up and the data plugin is installed, you can recreate the showcase demo in minutes.
 
 ### Step 1: Send out Kimi
 
