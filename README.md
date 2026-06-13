@@ -233,8 +233,30 @@ us_clean_energy_power_research_workbench/
 ├── us_clean_energy_power_peer_comps.xlsx  # Stock comparison spreadsheet
 ├── source_inventory.xlsx            # List of data sources used
 ├── market_ohlcv.json                # Real stock price history
+├── requirements.txt                 # Python dependencies
+├── .github/workflows/               # GitHub Actions auto-refresh workflow
 └── README.md                        # Notes from k2.7 about the build
 ```
+
+---
+
+## 🌐 Share it on GitHub Pages
+
+The dashboard is a self-contained static HTML file, so you can host it for free on GitHub Pages:
+
+1. Push this repo to GitHub.
+2. Go to **Settings → Pages**.
+3. Select **Deploy from a branch** → `main` → `/ (root)`.
+4. Your terminal goes live at:
+   ```
+   https://<your-username>.github.io/kimi-code/us_clean_energy_power_research_workbench/research_workbench.html
+   ```
+
+### Auto-refresh with GitHub Actions
+
+The included workflow at `.github/workflows/refresh-workbench.yml` re-runs the data pipeline on a schedule (or manually) and commits fresh data, Excel files, and the updated HTML back to the repo. After each refresh, GitHub Pages automatically serves the latest dashboard.
+
+See `us_clean_energy_power_research_workbench/README.md` for full local and GitHub usage details.
 
 ---
 
