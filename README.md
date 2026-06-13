@@ -1,17 +1,4 @@
-# ⚡ Kimi Code × k2.7: Catch, Train, Ship 🐭
-
-```
-              ⚡
-            /\        /\
-           /  \      /  \
-          /⚫  \    /  ⚫\
-         /      \  /      \
-        |   o      o      |
-        |  (O)      (O)   |
-        |       v         |
-         \    ⌒  ⌒       /
-          \_____________/
-```
+# ⚡ Kimi Code × k2.7: Catch, Train, Ship
 
 > *“To become a Pokémon Master of Code, you must first choose your starter.”*
 
